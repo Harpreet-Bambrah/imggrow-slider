@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.images-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+}
+.open{
+    flex: 7;
+
+}
+.close{
+    flex: 2;
+}
+
+
+.images-container div{
+   width: 18%;
+   overflow: hidden;
+   position: relative;
+  
+}
+
+img{
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+}
+
+h2{
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+}
+
+h3{
+    display: none;
+}
+
+
+.text-h3-top{
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.text-h3-bottom{
+    position: absolute;
+    bottom: 10%;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    animation-name: animation2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.text-h3-topbottom{
+    position: absolute;
+    top: -10%;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    animation-name: animation3;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.text-h3-bottomtop{
+    position: absolute;
+    bottom: -10%;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    animation-name: animation4;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes animation1 {
+    
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animation2 {
+    
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animation3 {
+    
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes animation4 {
+    
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(200px);
+    }
+}

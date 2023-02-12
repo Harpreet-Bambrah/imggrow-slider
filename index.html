@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img gallary</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <section>
+        <div class="images-container">
+            <div id="imgdiv-1" class="img-div close">
+                <img src="images/adventure-g13a52b1e7_1280.jpg" id="img-1" onclick="imggrow('imgdiv-1','text-h3-top1','text-h3-bottom1')">
+                <h3 id="text-h3-top1">EXPERIENCE</h3>
+                <h2>LET'S</h2>
+                <h3 id="text-h3-bottom1">TODAY</h3>
+            </div> 
+
+            <div id="imgdiv-2" class="img-div close">
+                <img src="images/pexels-huy-phan-1383779.jpg" id="img-2" onclick="imggrow('imgdiv-2','text-h3-top2','text-h3-bottom2')">
+                <h3  id="text-h3-top2">EXPERIENCE</h3>
+                <h2>TAKE</h2>
+                <h3 id="text-h3-bottom2">TODAY</h3>
+            </div>
+
+            <div id="imgdiv-3" class="img-div close">
+               <img src="images/girl-g1c9bf556a_1280.jpg" id="img-3" onclick="imggrow('imgdiv-3','text-h3-top3','text-h3-bottom3')">
+               <h3  id="text-h3-top3">EXPERIENCE</h3>
+               <h2>IT</h2>
+               <h3 id="text-h3-bottom3">TODAY</h3>
+            </div>
+
+            <div id="imgdiv-4" class="img-div close">
+                <img src="images/woman-g08d7af492_1280.jpg" id="img-4" onclick="imggrow('imgdiv-4','text-h3-top4','text-h3-bottom4')">
+                <h3  id="text-h3-top4">EXPERIENCE</h3>
+                <h2>ALL</h2>
+                <h3 id="text-h3-bottom4">TODAY</h3>
+            </div>
+            <div id="imgdiv-5" class="img-div close">
+                <img src="images/pexels-oleksandr-pidvalnyi-344102.jpg" id="img-5" onclick="imggrow('imgdiv-5','text-h3-top5','text-h3-bottom5')">
+                <h3  id="text-h3-top5">EXPERIENCE</h3>
+
+                <h2>IN</h2>
+                <h3 id="text-h3-bottom5">TODAY</h3>
+            </div>
+        </div>
+    </section>
+        
+    <!-- <script>
+        function imggrow(id,idh3t,idh3b){
+            let divwidth = document.getElementById(id).style.width;
+            if(divwidth=='60%'){
+
+
+                let divlen = document.getElementsByClassName('img-div').length;
+            for(a=0;a<divlen;a++){
+                document.getElementsByClassName('img-div')[a].style.width='20%';
+            }   
+
+            document.getElementById(idh3t).style.display='none';
+            document.getElementById(idh3b).style.display='none';
+            }else{
+
+
+            let divlen = document.getElementsByClassName('img-div').length;
+            for(a=0;a<divlen;a++){
+                document.getElementsByClassName('img-div')[a].style.width='10%';
+                document.getElementsByClassName('text-h3-top')[a].style.display='none'
+                document.getElementsByClassName('text-h3-bottom')[a].style.display='none'
+            }   
+            document.getElementById(id).style.width = '60%';
+            document.getElementById(idh3t).style.display='block';
+            document.getElementById(idh3b).style.display='block';
+            document.getElementById(id).style.transition= '2s all';
+        }
+    }
+   
+    </script> -->
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
